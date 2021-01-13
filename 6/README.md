@@ -2,7 +2,7 @@
 
 # 6
 1. Go Computer engine -> VM instance  -> Press the button "create instance" (img11)
-![ssh-hd-insight](../img/11.png)
+![](../img/11.png)
 2. Change "boot disk" operating system into the "Ubuntu" (Note! for this lab I have used version 16.04)
 3. Allow HTTP/HTTPS traffic 
 4. Press the button "Create"
@@ -12,25 +12,25 @@
 
 6. On your left menu find the "Firewall" chapter. Create a new firewall rule 
 
-6.a elasticsearch
-6.1 turn on "logs"
-6.2 "Targets" needs to be "All instances in the network"
-6.3 "Source IP ranges " - 0.0.0.0/0
-6.4 At Protocols and ports match "tcp" and write 9200
-6.5 Press create 
-6.b kibana
-6.6 turn on "logs"
-6.7 "Targets" needs to be "All instances in the network"
-6.8 "Source IP ranges " - 0.0.0.0/0
-6.9 At Protocols and ports match "tcp" and write 5601
-6.10 Press create 
+* 6.a elasticsearch
+* 6.1 turn on "logs"
+* 6.2 "Targets" needs to be "All instances in the network"
+* 6.3 "Source IP ranges " - 0.0.0.0/0
+* 6.4 At Protocols and ports match "tcp" and write 9200
+* 6.5 Press create 
+* 6.b kibana
+* 6.6 turn on "logs"
+* 6.7 "Targets" needs to be "All instances in the network"
+* 6.8 "Source IP ranges " - 0.0.0.0/0
+* 6.9 At Protocols and ports match "tcp" and write 5601
+* 6.10 Press create 
  
 7. Go Computer engine -> Your instance -> press "SSH" to open a console (NOTE! for further actions I have used "ttps://logz.io/blog/elk-stack-google-cloud/")
 
 8. Use those command 
 
 8.a lasticsearch
-`
+```
 1  sudo apt-get install default-jre
 2  sudo apt update
 3  sudo apt install apt-transport-https
@@ -46,7 +46,8 @@
 (Change networkhost into "0.0.0.0")
 (Change discovery seed hosts into "[]")
 13  sudo service elasticsearch restart
-`
+````
+
 8.1 Go Your VM instance -> Network interfaces -> Find "External IP" and copy it. In a new tab paste your external IP + :9200. 
 You should have smth like this. (img14)
 ![ssh-hd-insight](../img/14.png)
@@ -54,7 +55,7 @@ You should have smth like this. (img14)
 
 8.b kibana
 
-`
+```
 14  sudo apt-get install apt-transport-https
 15  echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
 16  sudo apt-get update
@@ -70,7 +71,7 @@ You should have smth like this. (img14)
 (Change server.port into "5601")
 25  sudo service kibana start
 26  sudo service kibana status
-`
+```
 8.1 Go Your VM instance -> Network interfaces -> Find "External IP" and copy it. In a new tab paste your external IP + :5601. 
    You should have smth like this. (img15)
    ![ssh-hd-insight](../img/15.png)
