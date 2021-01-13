@@ -8,7 +8,8 @@
 4. Press the button "Create"
 
 5. Find Network interfaces chapter and click on "View details" (img13)
-![ssh-hd-insight](../img/6/13.png)
+![ssh-hd-insight](../6/img/13.png)
+
 
 6. On your left menu find the "Firewall" chapter. Create a new firewall rule 
 
@@ -50,7 +51,7 @@
 
 8.1 Go Your VM instance -> Network interfaces -> Find "External IP" and copy it. In a new tab paste your external IP + :9200. 
 You should have smth like this. (img14)
-![ssh-hd-insight](../img/14.png)
+![ssh-hd-insight](../6/img/14.png)
 
 
 8.b kibana
@@ -74,7 +75,7 @@ You should have smth like this. (img14)
 ```
 8.1 Go Your VM instance -> Network interfaces -> Find "External IP" and copy it. In a new tab paste your external IP + :5601. 
    You should have smth like this. (img15)
-   ![ssh-hd-insight](../img/15.png)
+![ssh-hd-insight](../6/img/15.png)
 
 9. Prepare AZURE
 
@@ -83,7 +84,7 @@ You should have smth like this. (img14)
 * 9.3 "In Development Tools" chapter find logic app designer
 * 9.4 Go to the Templates and choose a "Blank logic app"
 * 9.5 Search for "Event hubs" and make configs like at the screenshot (img16)
-![ssh-hd-insight](../img/16.png)
+![ssh-hd-insight](../6/img/16.png)
 * 9.6 Search for "HTTP" and make configs like at the screenshot (img17)(NOTE! Find your own IP range)
-![ssh-hd-insight](../img/17.png)
+![ssh-hd-insight](../6/img/17.png)
 
