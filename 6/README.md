@@ -2,7 +2,7 @@
 
 # 6
 1. Go Computer engine -> VM instance  -> Press the button "create instance" (img11)
-![ssh-hd-insight](../img/6/11.png)
+![ssh-hd-insight](../6/img/11.png)
 2. Change "boot disk" operating system into the "Ubuntu" (Note! for this lab I have used version 16.04)
 3. Allow HTTP/HTTPS traffic 
 4. Press the button "Create"
