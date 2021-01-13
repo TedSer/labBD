@@ -2,13 +2,13 @@
 
 # 6
 1. Go Computer engine -> VM instance  -> Press the button "create instance" (img11)
-![](../img/11.png)
+![ssh-hd-insight](../img/6/11.png)
 2. Change "boot disk" operating system into the "Ubuntu" (Note! for this lab I have used version 16.04)
 3. Allow HTTP/HTTPS traffic 
 4. Press the button "Create"
 
 5. Find Network interfaces chapter and click on "View details" (img13)
-![ssh-hd-insight](../img/13.png)
+![ssh-hd-insight](../img/6/13.png)
 
 6. On your left menu find the "Firewall" chapter. Create a new firewall rule 
 
@@ -78,12 +78,12 @@ You should have smth like this. (img14)
 
 9. Prepare AZURE
 
-9.1 Create new or use res group from 5 lab(NOTE! You can review how to create a new res grop on top of the guidepage for lab 5)
-9.2 Search "logic apps" and press "+" button 
-9.3 "In Development Tools" chapter find logic app designer
-9.4 Go to the Templates and choose a "Blank logic app"
-9.5 Search for "Event hubs" and make configs like at the screenshot (img16)
+* 9.1 Create new or use res group from 5 lab(NOTE! You can review how to create a new res grop on top of the guidepage for lab 5)
+* 9.2 Search "logic apps" and press "+" button 
+* 9.3 "In Development Tools" chapter find logic app designer
+* 9.4 Go to the Templates and choose a "Blank logic app"
+* 9.5 Search for "Event hubs" and make configs like at the screenshot (img16)
 ![ssh-hd-insight](../img/16.png)
-9.6 Search for "HTTP" and make configs like at the screenshot (img17)(NOTE! Find your own IP range)
+* 9.6 Search for "HTTP" and make configs like at the screenshot (img17)(NOTE! Find your own IP range)
 ![ssh-hd-insight](../img/17.png)
 
