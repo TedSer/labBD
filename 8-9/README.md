@@ -3,63 +3,63 @@
 1. Create new or use already existed res group 
 2. Add Databriks and Storrage account into res group 
 
-![ssh-hd-insight](../8/img/1.png)
+![ssh-hd-insight](../8-9/img/1.png)
 3. Go Container from Storrage account(Data lake chapter) -> Add container -> Create 
 * (NOTE!Hierarchical namespace – Enabled. Replecation – LRS) 
 4. Add a directory 
 * (NOTE! Final result should be displayed here)
 
-7. Go Active registration -> App registration 
+5. Go Active registration -> App registration 
 
-![ssh-hd-insight](../8/img/2.png)
+![ssh-hd-insight](../8-9/img/2.png)
 
-8. Certification & secretes -> new client secret
+6. Certification & secretes -> new client secret
 * (NOTE! Copy VALUE feild as it would be shown only once and we need it to use in next steps)
 
-9. Go Res group -> Access control -> Role assigment -> Add
+7. Go Res group -> Access control -> Role assigment -> Add
 * (NOTE! Choose not the user but your instance)
 
-![ssh-hd-insight](../8/img/3.png)
+![ssh-hd-insight](../8-9/img/3.png)
 
-10. Go from your Res group to databriks service 
+8. Go from your Res group to databriks service 
 
-![ssh-hd-insight](../8/img/4.png)
+![ssh-hd-insight](../8-9/img/4.png)
 
-11. Pres "Launch workspace"
+9. Pres "Launch workspace"
 * (NOTE! If there is no button "Launch workspace" wait till databriks will deploy)
 
-12. Create new cluster with following wetup 
+10. Create new cluster with following wetup 
 
-![ssh-hd-insight](../8/img/5.png)
+![ssh-hd-insight](../8-9/img/5.png)
 
 * (NOTE! Use 60 minutes terminates to reduce costs)
 
-13. While cluster is creating go to the databricks maincreen and create 2 Notebooks: 1 for python and 1 for Scala
+11. While cluster is creating go to the databricks maincreen and create 2 Notebooks: 1 for python and 1 for Scala
 
-![ssh-hd-insight](../8/img/6.png)
+![ssh-hd-insight](../8-9/img/6.png)
 
-14. When creating is finished go from your cluster -> libraries -> instal new 
+12. When creating is finished go from your cluster -> libraries -> instal new 
 
-15. Choose Maven and paste ```com.microsoft.azure:azure-eventhubs-spark_2.12:2.3.18-9 ```
+13. Choose Maven and paste ```com.microsoft.azure:azure-eventhubs-spark_2.12:2.3.18-9 ```
 * (NOTE! Try to restart whole cluster if lib does not deploy)
 
 
-![ssh-hd-insight](../8/img/7.png)
+![ssh-hd-insight](../8-9/img/7.png)
 
-15. We need to give an acces to our folder and container we created before. Use Azure Storage Explorer.
+14. We need to give an acces to our folder and container we created before. Use Azure Storage Explorer.
 
 *  find yor folder and press Manage ACLs. Add yor instance 
 *  give those permissions 
 
-![ssh-hd-insight](../8/img/12.png)
+![ssh-hd-insight](../8-9/img/12.png)
 
 *  same but now with container
 
-![ssh-hd-insight](../8/img/13.png)
+![ssh-hd-insight](../8-9/img/13.png)
 
 
 
-16. Go to your Python notebook from Workspace and paste: (as it is on screen)
+15. Go to your Python notebook from Workspace and paste: (as it is on screen)
 
 ```
 configs = {"fs.azure.account.auth.type": "OAuth",
@@ -79,9 +79,9 @@ dbutils.fs.mount(
 display(dbutils.fs.ls("/mnt/labs"))
 ```
 
-![ssh-hd-insight](../8/img/8.png)
+![ssh-hd-insight](../8-9/img/8.png)
 
-17. Go to your Python notebook from Workspace and paste:
+16. Go to your Python notebook from Workspace and paste:
 
 * (NOTE! Your eventhub instance should not be empty so generate some files)
 ```
@@ -118,13 +118,13 @@ filtered.writeStream
   .start("/mnt/labs/labiot89")
   ```
 
-  ![ssh-hd-insight](../8/img/9.png)
+  ![ssh-hd-insight](../8-9/img/9.png)
 
 
-15. In my case I have used those data 
+17. In my case I have used those data 
 
-  ![ssh-hd-insight](../8/img/10.png)
+  ![ssh-hd-insight](../8-9/img/10.png)
 
-16. Result 
+18. Result 
 
-  ![ssh-hd-insight](../8/img/11.png)
+  ![ssh-hd-insight](../8-9/img/11.png)

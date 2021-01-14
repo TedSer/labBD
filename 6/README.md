@@ -1,13 +1,13 @@
 
 
 # 6
-1. Go Computer engine -> VM instance  -> Press the button "create instance" (img11)
+1. Go Computer engine -> VM instance  -> Press the button "create instance" 
 ![ssh-hd-insight](../6/img/11.png)
 2. Change "boot disk" operating system into the "Ubuntu" (Note! for this lab I have used version 16.04)
 3. Allow HTTP/HTTPS traffic 
 4. Press the button "Create"
 
-5. Find Network interfaces chapter and click on "View details" (img13)
+5. Find Network interfaces chapter and click on "View details" 
 ![ssh-hd-insight](../6/img/13.png)
 
 
@@ -50,7 +50,7 @@
 ````
 
 8.1 Go Your VM instance -> Network interfaces -> Find "External IP" and copy it. In a new tab paste your external IP + :9200. 
-You should have smth like this. (img14)
+You should have smth like this. 
 ![ssh-hd-insight](../6/img/14.png)
 
 
@@ -74,7 +74,7 @@ You should have smth like this. (img14)
 26  sudo service kibana status
 ```
 8.1 Go Your VM instance -> Network interfaces -> Find "External IP" and copy it. In a new tab paste your external IP + :5601. 
-   You should have smth like this. (img15)
+   You should have smth like this. 
 ![ssh-hd-insight](../6/img/15.png)
 
 9. Prepare AZURE
@@ -83,8 +83,8 @@ You should have smth like this. (img14)
 * 9.2 Search "logic apps" and press "+" button 
 * 9.3 "In Development Tools" chapter find logic app designer
 * 9.4 Go to the Templates and choose a "Blank logic app"
-* 9.5 Search for "Event hubs" and make configs like at the screenshot (img16)
+* 9.5 Search for "Event hubs" and make configs like at the screenshot 
 ![ssh-hd-insight](../6/img/16.png)
-* 9.6 Search for "HTTP" and make configs like at the screenshot (img17)(NOTE! Find your own IP range)
+* 9.6 Search for "HTTP" and make configs like at the screenshot (NOTE! Find your own IP range)
 ![ssh-hd-insight](../6/img/17.png)
 
