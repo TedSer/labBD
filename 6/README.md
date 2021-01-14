@@ -79,12 +79,13 @@ You should have smth like this.
 
 9. Prepare AZURE
 
-* 9.1 Create new or use res group from 5 lab(NOTE! You can review how to create a new res grop on top of the guidepage for lab 5)
+* 9.1 Create new or use res group from 5 lab(NOTE! You can review how to create a new res group on top of the guidepage for lab 5)
 * 9.2 Search "logic apps" and press "+" button 
 * 9.3 "In Development Tools" chapter find logic app designer
 * 9.4 Go to the Templates and choose a "Blank logic app"
-* 9.5 Search for "Event hubs" and make configs like at the screenshot 
+* 9.5 Search for "Event hubs" and make configs like in the screenshot 
 ![ssh-hd-insight](../6/img/16.png)
 * 9.6 Search for "HTTP" and make configs like at the screenshot (NOTE! Find your own IP range)
 ![ssh-hd-insight](../6/img/17.png)
+* 9.7 Press "Run" 
 

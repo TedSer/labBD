@@ -23,7 +23,7 @@ func getJson(url string) []map[string]string {
   getClient := http.Client{
     Timeout: time.Second * 2, // Timeout after 2 seconds
   }
-
+// if for handling errs
   req, err := http.NewRequest(http.MethodGet, url, nil)
   if err != nil {
     logrus.Fatal(err)
@@ -93,11 +93,11 @@ func operateEventHub(url string) {
 
   ctx := context.Background()
 
-  // send a single message 
+  //back into json format
   for i, data := range dataJson {
     dataSingleJson, err := json.Marshal(data)
     if err != nil {
-      logrus.Fatal(err)
+      logrus.Fatal(err) 
     }
     event := eventhub.NewEvent(dataSingleJson)
     event.Set("content_type", "application/json")

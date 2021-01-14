@@ -13,7 +13,7 @@
 ![ssh-hd-insight](../7/img/1.png)
 
 
-4.  Crate new visualisation as in step 1 
+4.  Crate new visualization as in step 1 
  
 5. Select "Line" chart and next choose your source
 
@@ -26,11 +26,11 @@
 ![ssh-hd-insight](../7/img/2.png)
 
 
-7. Crate new visualisation as in step 1  
+7. Crate new visualization as in step 1  
 
-8. Select "Controls" chart and next choose your source
+8. Select the "Controls" chart and next choose your source
 
-9. Select option list and choose your source in "Index pattern" dropdown
+9. Select the option list and choose your source in the "Index pattern" dropdown
 
 * 9.1 add your field 
 * 9.2 customize selection
@@ -45,10 +45,10 @@
 
 ![ssh-hd-insight](../7/img/4.png)
 
-12. Create "Get" reaquest to score 5 results with keeword "department"
+12. Create "Get" request to score 5 results with keyword "department"
 
 ![ssh-hd-insight](../7/img/5.png)
 
-13. Create "Get" reaquest to score 1 "bfy" result wich has "2020" inside 
+13. Create "Get" request to score 1 "bfy" result wich has "2020" inside 
 
 ![ssh-hd-insight](../7/img/6.png)
