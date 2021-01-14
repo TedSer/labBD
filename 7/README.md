@@ -44,3 +44,11 @@
 11. Add created charts
 
 ![ssh-hd-insight](../7/img/4.png)
+
+12. Create "Get" reaquest to score 5 results with keeword "department"
+
+![ssh-hd-insight](../7/img/5.png)
+
+13. Create "Get" reaquest to score 1 "bfy" result wich has "2020" inside 
+
+![ssh-hd-insight](../7/img/6.png)
