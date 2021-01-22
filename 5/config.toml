@@ -1,0 +1,3 @@
+eventHubConnStr = "-"
+redisAddr       = "-"
+redisPass       = "-"
